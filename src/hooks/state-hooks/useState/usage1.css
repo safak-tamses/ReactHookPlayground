@@ -1,0 +1,24 @@
+/* Parent div için grid yapısı */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 2 sütunlu grid */
+    gap: 16px; /* Çocuklar arasındaki boşluk */
+    padding: 16px;
+}
+
+/* Her bir child öğe için border ve shadow */
+.child {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ccc; /* Border ekledik */
+    border-radius: 8px; /* Köşe yuvarlama */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow ekledik */
+    transition: all 0.3s ease; /* Hover efekti için geçiş */
+}
+
+/* Hover efekti: shadow'u büyütmek */
+.child:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px); /* Yukarıya kayma efekti */
+}

@@ -1,0 +1,45 @@
+{
+  "name": "react-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start:dev",
+    "start:dev": "cross-env NODE_ENV=dev webpack serve --open",
+    "start:prod": "cross-env NODE_ENV=prod webpack serve --open",
+    "start:test": "cross-env NODE_ENV=test webpack serve --open",
+    "build": "npm run build:prod",
+    "build:dev": "cross-env NODE_ENV=development webpack --mode production",
+    "build:prod": "cross-env NODE_ENV=production webpack --mode production",
+    "build:test": "cross-env NODE_ENV=test webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "dotenv": "^16.4.7",
+    "html-webpack-plugin": "^5.6.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "style-loader": "^4.0.0",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "cross-env": "^7.0.3",
+    "dotenv-webpack": "^8.1.0",
+    "ts-loader": "^9.5.1"
+  }
+}
