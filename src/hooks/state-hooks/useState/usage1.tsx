@@ -38,6 +38,8 @@ function Usage1() {
         setText(e.target.value);
     }
 
+    console.log("test");
+
     const handleChangeCheckBox = (e:any) => {
         setLiked(e.target.checked);
     }
